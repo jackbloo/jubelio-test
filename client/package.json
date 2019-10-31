@@ -7,9 +7,12 @@
     "mobx": "^5.14.2",
     "mobx-react": "^6.1.4",
     "react": "^16.11.0",
+    "react-confirm-alert": "^2.4.1",
     "react-dom": "^16.11.0",
+    "react-responsive-carousel": "^3.1.51",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "react-toastify": "^5.4.0"
   },
   "scripts": {
     "start": "react-scripts start",

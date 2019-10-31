@@ -1,7 +1,8 @@
 import React,{Component} from 'react'
 import './index.css'
+import {withRouter} from 'react-router-dom'
 
-export default class Navbar extends Component{
+class Navbar extends Component{
     constructor(props){
         super(props)
         this.state = {
@@ -9,11 +10,15 @@ export default class Navbar extends Component{
         }
 
     }
+
+    handleMove(){
+        this.props.history.push('/')
+    }
     render(){
         return (
                 <div className="navs">
                     <div className="title">
-                        <h1>Project</h1>  
+                        <h1 onClick={this.handleMove.bind(this)}>Project</h1>  
                     </div>
 
 
@@ -24,3 +29,5 @@ export default class Navbar extends Component{
         )
       }
 }
+
+export default withRouter(Navbar)

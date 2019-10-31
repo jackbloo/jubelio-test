@@ -15,7 +15,10 @@ async fetchProducts(){
             method:'GET',
             url:baseURL + 'products'
         })
-        this.setData(data)
+        runInAction(()=>{
+            this.loading = false
+            this.products = data
+        })
     }catch(error){
         console.log(error)
     }
@@ -23,6 +26,7 @@ async fetchProducts(){
 
     setData(data){
         this.products = data
+        this.loadig = false
     }
 }
 
@@ -30,7 +34,7 @@ decorate(Store,{
     products:observable,
     loading:observable,
     fetchProducts:action,
-    setData:action
+    setData:action,
 })
 
 export const store = new Store()
