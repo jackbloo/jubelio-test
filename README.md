@@ -4,7 +4,7 @@
 
         npm install
 
-    To run Client
+To run Client
 
         npm run start
 
@@ -13,19 +13,19 @@
 
         npm install
 
-    Initializing sequelize by creating DB
+Initializing sequelize by creating DB
 
         sequelize db:create
     
-    Migrating DB
+ Migrating DB
 
         sequelize db:migrate
 
-    Seeding Data
+Seeding Data
 
         sequelize db:seed --seed 20191031012435-add_data
 
-    To run Server
+To run Server
 
         npm run dev
 
