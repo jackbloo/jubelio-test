@@ -1,6 +1,6 @@
 'use strict';
-const Hapi = require('@hapi/hapi');
 
+const Hapi = require('@hapi/hapi');
 const {Product} = require('./models/index')
 
 const init = async () => {

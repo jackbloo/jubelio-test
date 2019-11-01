@@ -38,6 +38,7 @@ class Products extends Component{
                                 <img src="https://cdn.elevenia.co.id/browsing/banner/2019/09/10/8263/2019091010541036767_9111919_1.jpg" className="gambar" alt="3"/>
                             </div>
                         </Carousel>
+                    <h1 style={{marginTop:"2%"}}>Products ({this.props.store.products.length})</h1>
                     <div className="items">
                         {
                             toJS(this.props.store.products).map((el,i)=>{

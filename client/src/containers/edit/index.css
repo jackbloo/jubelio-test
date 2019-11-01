@@ -1,58 +1,3 @@
-@media only screen and (min-width: 992px) {
-.grouping {
-    width: 100%;
-    height:100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5%;
-    margin-top: 10%;
-}
-.jumbotron {
-    height: 20%;
-    width: 100%;
-    text-align: center;
-}
-
-.edit {
-    height: 80%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.forms {
-    height: 80%;
-    width: 40%;
-    background-color: #0003;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    
-}
-
-input, textarea{
-    width: 40%;
-    margin-bottom: 2%;
-	border: none;
-	border-radius: 20px;
-	outline: none;
-	padding: 10px;
-	color: #676767;
-	transition: border 0.5s;
-	-webkit-transition: border 0.5s;
-	-moz-transition: border 0.5s;
-	-o-transition: border 0.5s;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-    box-sizing:border-box;
-    overflow: hidden;
-}
-}
 
 @media only screen and (max-width: 600px) {
     .grouping {
@@ -79,7 +24,7 @@ input, textarea{
     }
     
     .forms {
-        height: 80%;
+        margin-top: 10%;
         width: 96%;
         background-color: #0003;
         display: flex;
@@ -114,8 +59,7 @@ input, textarea{
 
 
 @media only screen 
-  and (min-device-width: 600px)
-  and (max-device-width: 992px) {
+  and (min-device-width: 600px){
     .grouping {
         width: 100%;
         height:100%;
@@ -140,7 +84,7 @@ input, textarea{
     }
     
     .forms {
-        height: 80%;
+        margin-top: 5%;
         width: 96%;
         background-color: #0003;
         display: flex;

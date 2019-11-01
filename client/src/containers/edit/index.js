@@ -61,10 +61,15 @@ class Edit extends Component{
             </div>
             <div className="edit">
                 <div className="forms">
+                    <p>Name</p>
                     <input type="text" placeholder="name" ref="name" defaultValue={this.state.name}/>
+                    <p>SKU</p>
                     <input  type="text" placeholder="sku" ref="sku" defaultValue={this.state.sku}/>
+                    <p>Harga</p>
                     <input  type="number" placeholder="harga" ref="harga" defaultValue={this.state.harga}/>
+                    <p>Gambar</p>
                     <input  type="text" placeholder="gambar" ref="gambar" defaultValue={this.state.gambar}/>
+                    <p>Description</p>
                     <textarea  placeholder="description" ref="description" defaultValue={this.state.description}/>
                     <input type="submit" onClick={this.clickUpdate.bind(this)}/>
                 </div>
