@@ -1,0 +1,10 @@
+.App {
+  height: 97vh;
+  display: flex;
+  flex-direction: column;
+}
+.bodies {
+  height: 100%;
+}
+
+
